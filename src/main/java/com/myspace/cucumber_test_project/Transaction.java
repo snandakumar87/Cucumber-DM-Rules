@@ -12,6 +12,8 @@ public class Transaction implements java.io.Serializable {
 	private boolean foreignCurrencyTransaction;
 	private java.lang.Float transactionAmount;
 
+	private java.lang.Boolean needsReview;
+
 	public Transaction() {
 	}
 
@@ -39,12 +41,21 @@ public class Transaction implements java.io.Serializable {
 		this.transactionAmount = transactionAmount;
 	}
 
+	public java.lang.Boolean getNeedsReview() {
+		return this.needsReview;
+	}
+
+	public void setNeedsReview(java.lang.Boolean needsReview) {
+		this.needsReview = needsReview;
+	}
+
 	public Transaction(java.lang.String transactionRefNum,
 			boolean foreignCurrencyTransaction,
-			java.lang.Float transactionAmount) {
+			java.lang.Float transactionAmount, java.lang.Boolean needsReview) {
 		this.transactionRefNum = transactionRefNum;
 		this.foreignCurrencyTransaction = foreignCurrencyTransaction;
 		this.transactionAmount = transactionAmount;
+		this.needsReview = needsReview;
 	}
 
 }

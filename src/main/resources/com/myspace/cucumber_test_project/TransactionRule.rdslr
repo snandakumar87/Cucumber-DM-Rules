@@ -9,6 +9,6 @@ rule "TransactionRule"
 	then
 		>Transaction_Needs_Review fact0 = new Transaction_Needs_Review();
 		>fact0.setNeedsReview( true );
-		>fact0.setTransactionRefNumber( [transRefNum] );
+		>fact0.setTransactionRefNumber( {transRefNum} );
 		>insert( fact0 );
 end

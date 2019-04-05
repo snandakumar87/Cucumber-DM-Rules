@@ -5,5 +5,9 @@ import java.lang.Number;
 rule "Transaction_Rules"
 	dialect "mvel"
 	when
+		Transaction( foreignCurrencyTransaction == true && transactionAmount >= 100.0 )
 	then
+		Transaction fact0 = new Transaction();
+		fact0.setNeedsReview( true );
+		insertLogical( fact0 );
 end

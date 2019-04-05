@@ -70,19 +70,22 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>Transaction</step>
+              <step>Transaction_Needs_Review</step>
             </ExpressionElement>
             <ExpressionElement>
               <step>needsReview</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>0|2</name>
+            <name>1554475998333</name>
             <type>EXPECT</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <factIdentifier>
+            <name>1554475998333</name>
+            <className>com.myspace.cucumber_test_project.Transaction_Needs_Review</className>
+          </factIdentifier>
           <className>java.lang.Boolean</className>
-          <factAlias>Transaction</factAlias>
+          <factAlias>Transaction_Needs_Review</factAlias>
           <expressionAlias>needsReview</expressionAlias>
         </FactMapping>
       </factMappings>
@@ -112,7 +115,7 @@
             <rawValue class="string">250</rawValue>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
             <rawValue class="string">true</rawValue>
           </FactMappingValue>

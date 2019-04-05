@@ -6,12 +6,34 @@ package com.myspace.cucumber_test_project;
 
 public class Transaction_Needs_Review implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Transaction_Needs_Review() {
-    }
+	private java.lang.String transactionRefNum;
+	private java.lang.Boolean needsReview;
 
+	public Transaction_Needs_Review() {
+	}
 
+	public java.lang.String getTransactionRefNum() {
+		return this.transactionRefNum;
+	}
 
+	public void setTransactionRefNum(java.lang.String transactionRefNum) {
+		this.transactionRefNum = transactionRefNum;
+	}
+
+	public java.lang.Boolean getNeedsReview() {
+		return this.needsReview;
+	}
+
+	public void setNeedsReview(java.lang.Boolean needsReview) {
+		this.needsReview = needsReview;
+	}
+
+	public Transaction_Needs_Review(java.lang.String transactionRefNum,
+			java.lang.Boolean needsReview) {
+		this.transactionRefNum = transactionRefNum;
+		this.needsReview = needsReview;
+	}
 
 }

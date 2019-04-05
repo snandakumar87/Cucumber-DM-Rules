@@ -6,12 +6,45 @@ package com.myspace.cucumber_test_project;
 
 public class Transaction implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Transaction() {
-    }
+	private java.lang.String transactionRefNum;
+	private boolean foreignCurrencyTransaction;
+	private java.lang.Float transactionAmount;
 
+	public Transaction() {
+	}
 
+	public java.lang.String getTransactionRefNum() {
+		return this.transactionRefNum;
+	}
 
+	public void setTransactionRefNum(java.lang.String transactionRefNum) {
+		this.transactionRefNum = transactionRefNum;
+	}
+
+	public boolean isForeignCurrencyTransaction() {
+		return this.foreignCurrencyTransaction;
+	}
+
+	public void setForeignCurrencyTransaction(boolean foreignCurrencyTransaction) {
+		this.foreignCurrencyTransaction = foreignCurrencyTransaction;
+	}
+
+	public java.lang.Float getTransactionAmount() {
+		return this.transactionAmount;
+	}
+
+	public void setTransactionAmount(java.lang.Float transactionAmount) {
+		this.transactionAmount = transactionAmount;
+	}
+
+	public Transaction(java.lang.String transactionRefNum,
+			boolean foreignCurrencyTransaction,
+			java.lang.Float transactionAmount) {
+		this.transactionRefNum = transactionRefNum;
+		this.foreignCurrencyTransaction = foreignCurrencyTransaction;
+		this.transactionAmount = transactionAmount;
+	}
 
 }

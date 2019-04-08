@@ -1,0 +1,2 @@
+[when]When there is a transaction with transaction amount > {amount}=Transaction( transRefNum : transactionRefNum != null &&  transactionAmount >= 1000.0)
+[then]set Transaction needs review=Transaction_Needs_Review fact0 = new Transaction_Needs_Review();fact0.setTransactionRefNumber( transRefNum );fact0.setNeedsReview( true );insert( fact0 );

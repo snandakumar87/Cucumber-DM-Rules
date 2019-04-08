@@ -11,6 +11,8 @@ public class Transaction_Needs_Review implements java.io.Serializable {
 	private java.lang.String transactionRefNumber;
 	private java.lang.Boolean needsReview;
 
+	private java.lang.Boolean secondLevelApprovalRequired;
+
 	public Transaction_Needs_Review() {
 	}
 
@@ -30,10 +32,21 @@ public class Transaction_Needs_Review implements java.io.Serializable {
 		this.needsReview = needsReview;
 	}
 
+	public java.lang.Boolean getSecondLevelApprovalRequired() {
+		return this.secondLevelApprovalRequired;
+	}
+
+	public void setSecondLevelApprovalRequired(
+			java.lang.Boolean secondLevelApprovalRequired) {
+		this.secondLevelApprovalRequired = secondLevelApprovalRequired;
+	}
+
 	public Transaction_Needs_Review(java.lang.String transactionRefNumber,
-			java.lang.Boolean needsReview) {
+			java.lang.Boolean needsReview,
+			java.lang.Boolean secondLevelApprovalRequired) {
 		this.transactionRefNumber = transactionRefNumber;
 		this.needsReview = needsReview;
+		this.secondLevelApprovalRequired = secondLevelApprovalRequired;
 	}
 
 }

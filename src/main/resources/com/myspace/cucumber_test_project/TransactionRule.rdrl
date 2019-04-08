@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "TransactionRule"
 	dialect "mvel"
 	when
-		Transaction( transRefNum : transactionRefNum != null , transactionAmount > 300.0 , foreignCurrencyTransaction == true )
+		Transaction( transRefNum : transactionRefNum != null , transactionAmount > 100.0 , foreignCurrencyTransaction == true )
 	then
 		Transaction_Needs_Review fact0 = new Transaction_Needs_Review();
 		fact0.setTransactionRefNumber( transRefNum );

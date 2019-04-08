@@ -1,0 +1,9 @@
+package com.myspace.cucumber_test_project;
+
+import java.lang.Number;
+
+rule "TransactionRule"
+	dialect "mvel"
+	when
+	then
+end

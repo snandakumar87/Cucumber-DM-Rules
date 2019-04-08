@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "LargeTransactions"
 	dialect "mvel"
 	when
+		When there is a transaction with transaction amount > 1000.0
 	then
+		set Transaction needs review
 end
